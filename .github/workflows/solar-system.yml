@@ -25,6 +25,12 @@ jobs:
           with:
             node-version: 20
     
+        - name: Cache NPM dependencies
+          uses: actions/cache@latest
+          with:
+            path: ~/.npm
+            key: {ubuntu-latest}-node-{package-lock.json}
+
         - name: Install Dependencies
           run: npm install
     
