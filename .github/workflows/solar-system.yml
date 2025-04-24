@@ -110,7 +110,7 @@ jobs:
       - name: Setup kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: '1.27.1'
+          version: '1.28.1'
       
       - name: Set K8s context
         uses: azure/k8s-set-context@v2
