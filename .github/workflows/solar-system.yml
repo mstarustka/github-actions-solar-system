@@ -72,6 +72,8 @@ jobs:
 
     docker:
       name: docker
+      permissions:
+        packages: write
       needs:
       - code-coverage
       - unit-testing      
