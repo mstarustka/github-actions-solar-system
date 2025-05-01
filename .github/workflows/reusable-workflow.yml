@@ -1,6 +1,6 @@
 name: Testing - Reusable Workflow
 on: 
-  workflow_dispatch:
+  workflow_call:
     inputs:
       ingress-url:
         description: Provide the Ingress URL
